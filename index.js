@@ -8,8 +8,16 @@ const vm = window.vm = new Vue({
     }
 });
 
-console.log(vm);
 setTimeout(() => {
     vm.name = 'qmagics';
-    vm.arr.push(5);
+    vm.name = '5';
+    vm.name = '6';
+    vm.name = '7';
+    vm.name = '8';
+    vm.name = 'qmagics';
+    // vm.arr.push(5);
+
+    vm.$nextTick(() => {
+        console.log(vm.$el);
+    });
 }, 1000);

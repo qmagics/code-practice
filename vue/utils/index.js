@@ -9,3 +9,7 @@ export function isArray(val) {
 export function isFunction(val) {
     return typeof val === 'function';
 }
+
+// export function getValueByPath(data, path) {
+//     return (path.split('.') || []).reduce(() => { }, data);
+// }
